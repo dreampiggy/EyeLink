@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35B5463A1BF7454C0047D3E4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B546391BF7454C0047D3E4 /* CustomNavigationController.swift */; };
+		35C8BC8C1BF7052000F6CF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BC8B1BF7052000F6CF71 /* AppDelegate.swift */; };
+		35C8BC8E1BF7052000F6CF71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BC8D1BF7052000F6CF71 /* ViewController.swift */; };
+		35C8BC911BF7052000F6CF71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BC8F1BF7052000F6CF71 /* Main.storyboard */; };
+		35C8BC931BF7052000F6CF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BC921BF7052000F6CF71 /* Assets.xcassets */; };
+		35C8BC961BF7052000F6CF71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BC941BF7052000F6CF71 /* LaunchScreen.storyboard */; };
+		35C8BCA11BF7052100F6CF71 /* EyeLink_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCA01BF7052100F6CF71 /* EyeLink_ClientTests.swift */; };
+		35C8BCAC1BF7052100F6CF71 /* EyeLink_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCAB1BF7052100F6CF71 /* EyeLink_ClientUITests.swift */; };
+		35C8BCC01BF7069300F6CF71 /* CheckNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCBF1BF7069300F6CF71 /* CheckNetwork.m */; };
+		35C8BCC51BF7072400F6CF71 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BCC21BF7072400F6CF71 /* ProgressHUD.bundle */; };
+		35C8BCC61BF7072400F6CF71 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCC41BF7072400F6CF71 /* ProgressHUD.m */; };
+		35C8BCC81BF7076400F6CF71 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCC71BF7076400F6CF71 /* Tool.swift */; };
+		35C8BCCA1BF7078000F6CF71 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCC91BF7078000F6CF71 /* Consts.swift */; };
+		35C8BCCE1BF7095100F6CF71 /* photoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCCC1BF7095100F6CF71 /* photoVC.swift */; };
+		35C8BCCF1BF7095100F6CF71 /* photoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BCCD1BF7095100F6CF71 /* photoVC.xib */; };
+		35C8BCD31BF709D100F6CF71 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCD11BF709D100F6CF71 /* photoCell.swift */; };
+		35C8BCD41BF709D100F6CF71 /* photoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BCD21BF709D100F6CF71 /* photoCell.xib */; };
+		35C8BCD71BF70FFA00F6CF71 /* YoYoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCD61BF70FFA00F6CF71 /* YoYoAPI.swift */; };
+		35C8BCD91BF7102C00F6CF71 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCD81BF7102C00F6CF71 /* Config.swift */; };
+		35C8BCE21BF7212E00F6CF71 /* EasyTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCDD1BF7212E00F6CF71 /* EasyTimeline.m */; };
+		35C8BCE31BF7212E00F6CF71 /* EasyTimelineEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCDF1BF7212E00F6CF71 /* EasyTimelineEvent.m */; };
+		35C8BCE41BF7212E00F6CF71 /* NSTimer+EasyTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCE11BF7212E00F6CF71 /* NSTimer+EasyTimeline.m */; };
+		35C8BCE81BF731B500F6CF71 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCE61BF731B500F6CF71 /* VideoVC.swift */; };
+		35C8BCE91BF731B500F6CF71 /* VideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BCE71BF731B500F6CF71 /* VideoVC.xib */; };
+		35C8BCF61BF7366200F6CF71 /* KxAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCEC1BF7366200F6CF71 /* KxAudioManager.m */; };
+		35C8BCF71BF7366200F6CF71 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BCEF1BF7366200F6CF71 /* kxmovie.bundle */; };
+		35C8BCF81BF7366200F6CF71 /* KxMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCF11BF7366200F6CF71 /* KxMovieDecoder.m */; };
+		35C8BCF91BF7366200F6CF71 /* KxMovieGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCF31BF7366200F6CF71 /* KxMovieGLView.m */; };
+		35C8BCFA1BF7366200F6CF71 /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCF51BF7366200F6CF71 /* KxMovieViewController.m */; };
+		35C8BCFC1BF736A900F6CF71 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BCFB1BF736A900F6CF71 /* libbz2.1.0.tbd */; };
+		35C8BCFE1BF736B300F6CF71 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BCFD1BF736B300F6CF71 /* OpenGLES.framework */; };
+		35C8BD001BF736BF00F6CF71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BCFF1BF736BF00F6CF71 /* QuartzCore.framework */; };
+		35C8BD021BF736C900F6CF71 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD011BF736C900F6CF71 /* Accelerate.framework */; };
+		35C8BD041BF736D300F6CF71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD031BF736D300F6CF71 /* AudioToolbox.framework */; };
+		35C8BD061BF736DD00F6CF71 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD051BF736DD00F6CF71 /* MediaPlayer.framework */; };
+		35C8BD081BF736E700F6CF71 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD071BF736E700F6CF71 /* CoreAudio.framework */; };
+		35C8BD0A1BF736EE00F6CF71 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD091BF736EE00F6CF71 /* CoreMedia.framework */; };
+		35C8BD0C1BF736F800F6CF71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD0B1BF736F800F6CF71 /* CoreGraphics.framework */; };
+		35C8BD0E1BF7370D00F6CF71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD0D1BF7370D00F6CF71 /* Foundation.framework */; };
+		35C8BD101BF7371500F6CF71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD0F1BF7371500F6CF71 /* UIKit.framework */; };
+		35C8BD121BF7372300F6CF71 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD111BF7372300F6CF71 /* libz.tbd */; };
+		35C8BD141BF7373100F6CF71 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD131BF7373100F6CF71 /* libiconv.tbd */; };
+		35C8BD161BF7373A00F6CF71 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD151BF7373A00F6CF71 /* SystemConfiguration.framework */; };
+		35C8BD181BF7374100F6CF71 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD171BF7374100F6CF71 /* CFNetwork.framework */; };
+		35C8BD2A1BF739F600F6CF71 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD231BF739F600F6CF71 /* libavcodec.a */; };
+		35C8BD2B1BF739F600F6CF71 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD241BF739F600F6CF71 /* libavdevice.a */; };
+		35C8BD2C1BF739F600F6CF71 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD251BF739F600F6CF71 /* libavfilter.a */; };
+		35C8BD2D1BF739F600F6CF71 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD261BF739F600F6CF71 /* libavformat.a */; };
+		35C8BD2E1BF739F600F6CF71 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD271BF739F600F6CF71 /* libavutil.a */; };
+		35C8BD2F1BF739F600F6CF71 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD281BF739F600F6CF71 /* libswresample.a */; };
+		35C8BD301BF739F600F6CF71 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD291BF739F600F6CF71 /* libswscale.a */; };
+		EF2A09E03271B5C8995F6243 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A525430D6807EC2DC664EE /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35C8BC9D1BF7052100F6CF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C8BC801BF7052000F6CF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35C8BC871BF7052000F6CF71;
+			remoteInfo = EyeLink_Client;
+		};
+		35C8BCA81BF7052100F6CF71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35C8BC801BF7052000F6CF71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35C8BC871BF7052000F6CF71;
+			remoteInfo = EyeLink_Client;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35B546391BF7454C0047D3E4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		35C8BC881BF7052000F6CF71 /* EyeLink_Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeLink_Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C8BC8B1BF7052000F6CF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35C8BC8D1BF7052000F6CF71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35C8BC901BF7052000F6CF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35C8BC921BF7052000F6CF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35C8BC951BF7052000F6CF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35C8BC971BF7052000F6CF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C8BC9C1BF7052100F6CF71 /* EyeLink_ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeLink_ClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C8BCA01BF7052100F6CF71 /* EyeLink_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeLink_ClientTests.swift; sourceTree = "<group>"; };
+		35C8BCA21BF7052100F6CF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C8BCA71BF7052100F6CF71 /* EyeLink_ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeLink_ClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C8BCAB1BF7052100F6CF71 /* EyeLink_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeLink_ClientUITests.swift; sourceTree = "<group>"; };
+		35C8BCAD1BF7052100F6CF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C8BCBA1BF7055000F6CF71 /* EyeLink_Client-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeLink_Client-Bridging-Header.h"; sourceTree = "<group>"; };
+		35C8BCBE1BF7069300F6CF71 /* CheckNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckNetwork.h; sourceTree = "<group>"; };
+		35C8BCBF1BF7069300F6CF71 /* CheckNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetwork.m; sourceTree = "<group>"; };
+		35C8BCC21BF7072400F6CF71 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		35C8BCC31BF7072400F6CF71 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		35C8BCC41BF7072400F6CF71 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		35C8BCC71BF7076400F6CF71 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		35C8BCC91BF7078000F6CF71 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		35C8BCCC1BF7095100F6CF71 /* photoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoVC.swift; sourceTree = "<group>"; };
+		35C8BCCD1BF7095100F6CF71 /* photoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = photoVC.xib; sourceTree = "<group>"; };
+		35C8BCD11BF709D100F6CF71 /* photoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoCell.swift; sourceTree = "<group>"; };
+		35C8BCD21BF709D100F6CF71 /* photoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = photoCell.xib; sourceTree = "<group>"; };
+		35C8BCD61BF70FFA00F6CF71 /* YoYoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoYoAPI.swift; sourceTree = "<group>"; };
+		35C8BCD81BF7102C00F6CF71 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		35C8BCDC1BF7212E00F6CF71 /* EasyTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTimeline.h; sourceTree = "<group>"; };
+		35C8BCDD1BF7212E00F6CF71 /* EasyTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTimeline.m; sourceTree = "<group>"; };
+		35C8BCDE1BF7212E00F6CF71 /* EasyTimelineEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTimelineEvent.h; sourceTree = "<group>"; };
+		35C8BCDF1BF7212E00F6CF71 /* EasyTimelineEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTimelineEvent.m; sourceTree = "<group>"; };
+		35C8BCE01BF7212E00F6CF71 /* NSTimer+EasyTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EasyTimeline.h"; sourceTree = "<group>"; };
+		35C8BCE11BF7212E00F6CF71 /* NSTimer+EasyTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EasyTimeline.m"; sourceTree = "<group>"; };
+		35C8BCE61BF731B500F6CF71 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		35C8BCE71BF731B500F6CF71 /* VideoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoVC.xib; sourceTree = "<group>"; };
+		35C8BCEB1BF7366200F6CF71 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
+		35C8BCEC1BF7366200F6CF71 /* KxAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxAudioManager.m; sourceTree = "<group>"; };
+		35C8BCED1BF7366200F6CF71 /* KxLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
+		35C8BCEE1BF7366200F6CF71 /* kxmovie-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "kxmovie-Prefix.pch"; sourceTree = "<group>"; };
+		35C8BCEF1BF7366200F6CF71 /* kxmovie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kxmovie.bundle; sourceTree = "<group>"; };
+		35C8BCF01BF7366200F6CF71 /* KxMovieDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieDecoder.h; sourceTree = "<group>"; };
+		35C8BCF11BF7366200F6CF71 /* KxMovieDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMovieDecoder.m; sourceTree = "<group>"; };
+		35C8BCF21BF7366200F6CF71 /* KxMovieGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieGLView.h; sourceTree = "<group>"; };
+		35C8BCF31BF7366200F6CF71 /* KxMovieGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMovieGLView.m; sourceTree = "<group>"; };
+		35C8BCF41BF7366200F6CF71 /* KxMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieViewController.h; sourceTree = "<group>"; };
+		35C8BCF51BF7366200F6CF71 /* KxMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMovieViewController.m; sourceTree = "<group>"; };
+		35C8BCFB1BF736A900F6CF71 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		35C8BCFD1BF736B300F6CF71 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		35C8BCFF1BF736BF00F6CF71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		35C8BD011BF736C900F6CF71 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		35C8BD031BF736D300F6CF71 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		35C8BD051BF736DD00F6CF71 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		35C8BD071BF736E700F6CF71 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		35C8BD091BF736EE00F6CF71 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		35C8BD0B1BF736F800F6CF71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35C8BD0D1BF7370D00F6CF71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35C8BD0F1BF7371500F6CF71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35C8BD111BF7372300F6CF71 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		35C8BD131BF7373100F6CF71 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		35C8BD151BF7373A00F6CF71 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35C8BD171BF7374100F6CF71 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		35C8BD231BF739F600F6CF71 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = libs/libavcodec.a; sourceTree = "<group>"; };
+		35C8BD241BF739F600F6CF71 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = libs/libavdevice.a; sourceTree = "<group>"; };
+		35C8BD251BF739F600F6CF71 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = libs/libavfilter.a; sourceTree = "<group>"; };
+		35C8BD261BF739F600F6CF71 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = libs/libavformat.a; sourceTree = "<group>"; };
+		35C8BD271BF739F600F6CF71 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = libs/libavutil.a; sourceTree = "<group>"; };
+		35C8BD281BF739F600F6CF71 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = libs/libswresample.a; sourceTree = "<group>"; };
+		35C8BD291BF739F600F6CF71 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = libs/libswscale.a; sourceTree = "<group>"; };
+		3D38A9EAEFD8E5481EAF2E4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		50A5A8E95FC87D7D3B716918 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C7A525430D6807EC2DC664EE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35C8BC851BF7052000F6CF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C8BD2A1BF739F600F6CF71 /* libavcodec.a in Frameworks */,
+				35C8BD2B1BF739F600F6CF71 /* libavdevice.a in Frameworks */,
+				35C8BD2C1BF739F600F6CF71 /* libavfilter.a in Frameworks */,
+				35C8BD2D1BF739F600F6CF71 /* libavformat.a in Frameworks */,
+				35C8BD2E1BF739F600F6CF71 /* libavutil.a in Frameworks */,
+				35C8BD2F1BF739F600F6CF71 /* libswresample.a in Frameworks */,
+				35C8BD301BF739F600F6CF71 /* libswscale.a in Frameworks */,
+				35C8BD181BF7374100F6CF71 /* CFNetwork.framework in Frameworks */,
+				35C8BD161BF7373A00F6CF71 /* SystemConfiguration.framework in Frameworks */,
+				35C8BD141BF7373100F6CF71 /* libiconv.tbd in Frameworks */,
+				35C8BD121BF7372300F6CF71 /* libz.tbd in Frameworks */,
+				35C8BD101BF7371500F6CF71 /* UIKit.framework in Frameworks */,
+				35C8BD0E1BF7370D00F6CF71 /* Foundation.framework in Frameworks */,
+				35C8BD0C1BF736F800F6CF71 /* CoreGraphics.framework in Frameworks */,
+				35C8BD0A1BF736EE00F6CF71 /* CoreMedia.framework in Frameworks */,
+				35C8BD081BF736E700F6CF71 /* CoreAudio.framework in Frameworks */,
+				35C8BD061BF736DD00F6CF71 /* MediaPlayer.framework in Frameworks */,
+				35C8BD041BF736D300F6CF71 /* AudioToolbox.framework in Frameworks */,
+				35C8BD021BF736C900F6CF71 /* Accelerate.framework in Frameworks */,
+				35C8BD001BF736BF00F6CF71 /* QuartzCore.framework in Frameworks */,
+				35C8BCFE1BF736B300F6CF71 /* OpenGLES.framework in Frameworks */,
+				35C8BCFC1BF736A900F6CF71 /* libbz2.1.0.tbd in Frameworks */,
+				EF2A09E03271B5C8995F6243 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C8BC991BF7052100F6CF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C8BCA41BF7052100F6CF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35C8BC7F1BF7052000F6CF71 = {
+			isa = PBXGroup;
+			children = (
+				35C8BC8A1BF7052000F6CF71 /* EyeLink_Client */,
+				35C8BC9F1BF7052100F6CF71 /* EyeLink_ClientTests */,
+				35C8BCAA1BF7052100F6CF71 /* EyeLink_ClientUITests */,
+				35C8BC891BF7052000F6CF71 /* Products */,
+				C2EEE8B39478B2AE4152E232 /* Pods */,
+				71AAB72249729EAC34C8508C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35C8BC891BF7052000F6CF71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BC881BF7052000F6CF71 /* EyeLink_Client.app */,
+				35C8BC9C1BF7052100F6CF71 /* EyeLink_ClientTests.xctest */,
+				35C8BCA71BF7052100F6CF71 /* EyeLink_ClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35C8BC8A1BF7052000F6CF71 /* EyeLink_Client */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCBA1BF7055000F6CF71 /* EyeLink_Client-Bridging-Header.h */,
+				35C8BCDA1BF720EF00F6CF71 /* CustomClass */,
+				35C8BCD51BF70FE000F6CF71 /* Library */,
+				35C8BCCB1BF7081800F6CF71 /* SwiftSources */,
+				35C8BC8B1BF7052000F6CF71 /* AppDelegate.swift */,
+				35C8BC8D1BF7052000F6CF71 /* ViewController.swift */,
+				35C8BC8F1BF7052000F6CF71 /* Main.storyboard */,
+				35C8BC921BF7052000F6CF71 /* Assets.xcassets */,
+				35C8BC941BF7052000F6CF71 /* LaunchScreen.storyboard */,
+				35C8BC971BF7052000F6CF71 /* Info.plist */,
+			);
+			path = EyeLink_Client;
+			sourceTree = "<group>";
+		};
+		35C8BC9F1BF7052100F6CF71 /* EyeLink_ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCA01BF7052100F6CF71 /* EyeLink_ClientTests.swift */,
+				35C8BCA21BF7052100F6CF71 /* Info.plist */,
+			);
+			path = EyeLink_ClientTests;
+			sourceTree = "<group>";
+		};
+		35C8BCAA1BF7052100F6CF71 /* EyeLink_ClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCAB1BF7052100F6CF71 /* EyeLink_ClientUITests.swift */,
+				35C8BCAD1BF7052100F6CF71 /* Info.plist */,
+			);
+			path = EyeLink_ClientUITests;
+			sourceTree = "<group>";
+		};
+		35C8BCB91BF7053200F6CF71 /* CheckNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCBE1BF7069300F6CF71 /* CheckNetwork.h */,
+				35C8BCBF1BF7069300F6CF71 /* CheckNetwork.m */,
+			);
+			name = CheckNetwork;
+			sourceTree = "<group>";
+		};
+		35C8BCC11BF7072400F6CF71 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCC21BF7072400F6CF71 /* ProgressHUD.bundle */,
+				35C8BCC31BF7072400F6CF71 /* ProgressHUD.h */,
+				35C8BCC41BF7072400F6CF71 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		35C8BCCB1BF7081800F6CF71 /* SwiftSources */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCE51BF7317400F6CF71 /* video */,
+				35C8BCD01BF709B500F6CF71 /* photo */,
+			);
+			name = SwiftSources;
+			sourceTree = "<group>";
+		};
+		35C8BCD01BF709B500F6CF71 /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCCC1BF7095100F6CF71 /* photoVC.swift */,
+				35C8BCCD1BF7095100F6CF71 /* photoVC.xib */,
+				35C8BCD11BF709D100F6CF71 /* photoCell.swift */,
+				35C8BCD21BF709D100F6CF71 /* photoCell.xib */,
+			);
+			name = photo;
+			sourceTree = "<group>";
+		};
+		35C8BCD51BF70FE000F6CF71 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCEA1BF7366200F6CF71 /* kxmovie */,
+				35C8BCDB1BF7212E00F6CF71 /* EasyTimeline */,
+				35C8BCC11BF7072400F6CF71 /* ProgressHUD */,
+				35C8BCB91BF7053200F6CF71 /* CheckNetwork */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		35C8BCDA1BF720EF00F6CF71 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCD81BF7102C00F6CF71 /* Config.swift */,
+				35C8BCC71BF7076400F6CF71 /* Tool.swift */,
+				35C8BCC91BF7078000F6CF71 /* Consts.swift */,
+				35C8BCD61BF70FFA00F6CF71 /* YoYoAPI.swift */,
+				35B546391BF7454C0047D3E4 /* CustomNavigationController.swift */,
+			);
+			name = CustomClass;
+			sourceTree = "<group>";
+		};
+		35C8BCDB1BF7212E00F6CF71 /* EasyTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCDC1BF7212E00F6CF71 /* EasyTimeline.h */,
+				35C8BCDD1BF7212E00F6CF71 /* EasyTimeline.m */,
+				35C8BCDE1BF7212E00F6CF71 /* EasyTimelineEvent.h */,
+				35C8BCDF1BF7212E00F6CF71 /* EasyTimelineEvent.m */,
+				35C8BCE01BF7212E00F6CF71 /* NSTimer+EasyTimeline.h */,
+				35C8BCE11BF7212E00F6CF71 /* NSTimer+EasyTimeline.m */,
+			);
+			name = EasyTimeline;
+			path = ProgressHUD/EasyTimeline;
+			sourceTree = "<group>";
+		};
+		35C8BCE51BF7317400F6CF71 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCE61BF731B500F6CF71 /* VideoVC.swift */,
+				35C8BCE71BF731B500F6CF71 /* VideoVC.xib */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
+		35C8BCEA1BF7366200F6CF71 /* kxmovie */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BCEF1BF7366200F6CF71 /* kxmovie.bundle */,
+				35C8BCEB1BF7366200F6CF71 /* KxAudioManager.h */,
+				35C8BCEC1BF7366200F6CF71 /* KxAudioManager.m */,
+				35C8BCED1BF7366200F6CF71 /* KxLogger.h */,
+				35C8BCEE1BF7366200F6CF71 /* kxmovie-Prefix.pch */,
+				35C8BCF01BF7366200F6CF71 /* KxMovieDecoder.h */,
+				35C8BCF11BF7366200F6CF71 /* KxMovieDecoder.m */,
+				35C8BCF21BF7366200F6CF71 /* KxMovieGLView.h */,
+				35C8BCF31BF7366200F6CF71 /* KxMovieGLView.m */,
+				35C8BCF41BF7366200F6CF71 /* KxMovieViewController.h */,
+				35C8BCF51BF7366200F6CF71 /* KxMovieViewController.m */,
+			);
+			path = kxmovie;
+			sourceTree = "<group>";
+		};
+		71AAB72249729EAC34C8508C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35C8BD231BF739F600F6CF71 /* libavcodec.a */,
+				35C8BD241BF739F600F6CF71 /* libavdevice.a */,
+				35C8BD251BF739F600F6CF71 /* libavfilter.a */,
+				35C8BD261BF739F600F6CF71 /* libavformat.a */,
+				35C8BD271BF739F600F6CF71 /* libavutil.a */,
+				35C8BD281BF739F600F6CF71 /* libswresample.a */,
+				35C8BD291BF739F600F6CF71 /* libswscale.a */,
+				35C8BD171BF7374100F6CF71 /* CFNetwork.framework */,
+				35C8BD151BF7373A00F6CF71 /* SystemConfiguration.framework */,
+				35C8BD131BF7373100F6CF71 /* libiconv.tbd */,
+				35C8BD111BF7372300F6CF71 /* libz.tbd */,
+				35C8BD0F1BF7371500F6CF71 /* UIKit.framework */,
+				35C8BD0D1BF7370D00F6CF71 /* Foundation.framework */,
+				35C8BD0B1BF736F800F6CF71 /* CoreGraphics.framework */,
+				35C8BD091BF736EE00F6CF71 /* CoreMedia.framework */,
+				35C8BD071BF736E700F6CF71 /* CoreAudio.framework */,
+				35C8BD051BF736DD00F6CF71 /* MediaPlayer.framework */,
+				35C8BD031BF736D300F6CF71 /* AudioToolbox.framework */,
+				35C8BD011BF736C900F6CF71 /* Accelerate.framework */,
+				35C8BCFF1BF736BF00F6CF71 /* QuartzCore.framework */,
+				35C8BCFD1BF736B300F6CF71 /* OpenGLES.framework */,
+				35C8BCFB1BF736A900F6CF71 /* libbz2.1.0.tbd */,
+				C7A525430D6807EC2DC664EE /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2EEE8B39478B2AE4152E232 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D38A9EAEFD8E5481EAF2E4B /* Pods.debug.xcconfig */,
+				50A5A8E95FC87D7D3B716918 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35C8BC871BF7052000F6CF71 /* EyeLink_Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C8BCB01BF7052100F6CF71 /* Build configuration list for PBXNativeTarget "EyeLink_Client" */;
+			buildPhases = (
+				1F0BCA586B2D5AAC834CC9CE /* Check Pods Manifest.lock */,
+				35C8BC841BF7052000F6CF71 /* Sources */,
+				35C8BC851BF7052000F6CF71 /* Frameworks */,
+				35C8BC861BF7052000F6CF71 /* Resources */,
+				80F936489D0E907EB01D2EA3 /* Embed Pods Frameworks */,
+				7E2251BE960D4C225FBCF826 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeLink_Client;
+			productName = EyeLink_Client;
+			productReference = 35C8BC881BF7052000F6CF71 /* EyeLink_Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35C8BC9B1BF7052100F6CF71 /* EyeLink_ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C8BCB31BF7052100F6CF71 /* Build configuration list for PBXNativeTarget "EyeLink_ClientTests" */;
+			buildPhases = (
+				35C8BC981BF7052100F6CF71 /* Sources */,
+				35C8BC991BF7052100F6CF71 /* Frameworks */,
+				35C8BC9A1BF7052100F6CF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35C8BC9E1BF7052100F6CF71 /* PBXTargetDependency */,
+			);
+			name = EyeLink_ClientTests;
+			productName = EyeLink_ClientTests;
+			productReference = 35C8BC9C1BF7052100F6CF71 /* EyeLink_ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		35C8BCA61BF7052100F6CF71 /* EyeLink_ClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35C8BCB61BF7052100F6CF71 /* Build configuration list for PBXNativeTarget "EyeLink_ClientUITests" */;
+			buildPhases = (
+				35C8BCA31BF7052100F6CF71 /* Sources */,
+				35C8BCA41BF7052100F6CF71 /* Frameworks */,
+				35C8BCA51BF7052100F6CF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35C8BCA91BF7052100F6CF71 /* PBXTargetDependency */,
+			);
+			name = EyeLink_ClientUITests;
+			productName = EyeLink_ClientUITests;
+			productReference = 35C8BCA71BF7052100F6CF71 /* EyeLink_ClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35C8BC801BF7052000F6CF71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "赵磊";
+				TargetAttributes = {
+					35C8BC871BF7052000F6CF71 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = TV6QKK88A3;
+					};
+					35C8BC9B1BF7052100F6CF71 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = TV6QKK88A3;
+						TestTargetID = 35C8BC871BF7052000F6CF71;
+					};
+					35C8BCA61BF7052100F6CF71 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = TV6QKK88A3;
+						TestTargetID = 35C8BC871BF7052000F6CF71;
+					};
+				};
+			};
+			buildConfigurationList = 35C8BC831BF7052000F6CF71 /* Build configuration list for PBXProject "EyeLink_Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35C8BC7F1BF7052000F6CF71;
+			productRefGroup = 35C8BC891BF7052000F6CF71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35C8BC871BF7052000F6CF71 /* EyeLink_Client */,
+				35C8BC9B1BF7052100F6CF71 /* EyeLink_ClientTests */,
+				35C8BCA61BF7052100F6CF71 /* EyeLink_ClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35C8BC861BF7052000F6CF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C8BCC51BF7072400F6CF71 /* ProgressHUD.bundle in Resources */,
+				35C8BCF71BF7366200F6CF71 /* kxmovie.bundle in Resources */,
+				35C8BC961BF7052000F6CF71 /* LaunchScreen.storyboard in Resources */,
+				35C8BCD41BF709D100F6CF71 /* photoCell.xib in Resources */,
+				35C8BCCF1BF7095100F6CF71 /* photoVC.xib in Resources */,
+				35C8BC931BF7052000F6CF71 /* Assets.xcassets in Resources */,
+				35C8BCE91BF731B500F6CF71 /* VideoVC.xib in Resources */,
+				35C8BC911BF7052000F6CF71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C8BC9A1BF7052100F6CF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C8BCA51BF7052100F6CF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F0BCA586B2D5AAC834CC9CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E2251BE960D4C225FBCF826 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80F936489D0E907EB01D2EA3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35C8BC841BF7052000F6CF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C8BCFA1BF7366200F6CF71 /* KxMovieViewController.m in Sources */,
+				35C8BCF61BF7366200F6CF71 /* KxAudioManager.m in Sources */,
+				35C8BCCE1BF7095100F6CF71 /* photoVC.swift in Sources */,
+				35C8BC8E1BF7052000F6CF71 /* ViewController.swift in Sources */,
+				35C8BCCA1BF7078000F6CF71 /* Consts.swift in Sources */,
+				35C8BCF81BF7366200F6CF71 /* KxMovieDecoder.m in Sources */,
+				35C8BC8C1BF7052000F6CF71 /* AppDelegate.swift in Sources */,
+				35C8BCE81BF731B500F6CF71 /* VideoVC.swift in Sources */,
+				35C8BCD71BF70FFA00F6CF71 /* YoYoAPI.swift in Sources */,
+				35C8BCE31BF7212E00F6CF71 /* EasyTimelineEvent.m in Sources */,
+				35C8BCF91BF7366200F6CF71 /* KxMovieGLView.m in Sources */,
+				35C8BCE21BF7212E00F6CF71 /* EasyTimeline.m in Sources */,
+				35C8BCD31BF709D100F6CF71 /* photoCell.swift in Sources */,
+				35C8BCE41BF7212E00F6CF71 /* NSTimer+EasyTimeline.m in Sources */,
+				35C8BCC61BF7072400F6CF71 /* ProgressHUD.m in Sources */,
+				35C8BCD91BF7102C00F6CF71 /* Config.swift in Sources */,
+				35C8BCC81BF7076400F6CF71 /* Tool.swift in Sources */,
+				35B5463A1BF7454C0047D3E4 /* CustomNavigationController.swift in Sources */,
+				35C8BCC01BF7069300F6CF71 /* CheckNetwork.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C8BC981BF7052100F6CF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C8BCA11BF7052100F6CF71 /* EyeLink_ClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35C8BCA31BF7052100F6CF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C8BCAC1BF7052100F6CF71 /* EyeLink_ClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35C8BC9E1BF7052100F6CF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35C8BC871BF7052000F6CF71 /* EyeLink_Client */;
+			targetProxy = 35C8BC9D1BF7052100F6CF71 /* PBXContainerItemProxy */;
+		};
+		35C8BCA91BF7052100F6CF71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35C8BC871BF7052000F6CF71 /* EyeLink_Client */;
+			targetProxy = 35C8BCA81BF7052100F6CF71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35C8BC8F1BF7052000F6CF71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35C8BC901BF7052000F6CF71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35C8BC941BF7052000F6CF71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35C8BC951BF7052000F6CF71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35C8BCAE1BF7052100F6CF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35C8BCAF1BF7052100F6CF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35C8BCB11BF7052100F6CF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D38A9EAEFD8E5481EAF2E4B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs/FFmpeg\"";
+				INFOPLIST_FILE = EyeLink_Client/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libs",
+					"\"$(SRCROOT)/libs\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyeLink_Client/EyeLink_Client-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35C8BCB21BF7052100F6CF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A5A8E95FC87D7D3B716918 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs/FFmpeg\"";
+				INFOPLIST_FILE = EyeLink_Client/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libs",
+					"\"$(SRCROOT)/libs\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyeLink_Client/EyeLink_Client-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		35C8BCB41BF7052100F6CF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EyeLink_ClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeLink_Client.app/EyeLink_Client";
+			};
+			name = Debug;
+		};
+		35C8BCB51BF7052100F6CF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EyeLink_ClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyeLink_Client.app/EyeLink_Client";
+			};
+			name = Release;
+		};
+		35C8BCB71BF7052100F6CF71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EyeLink_ClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-ClientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EyeLink_Client;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		35C8BCB81BF7052100F6CF71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EyeLink_ClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-ClientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EyeLink_Client;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35C8BC831BF7052000F6CF71 /* Build configuration list for PBXProject "EyeLink_Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C8BCAE1BF7052100F6CF71 /* Debug */,
+				35C8BCAF1BF7052100F6CF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C8BCB01BF7052100F6CF71 /* Build configuration list for PBXNativeTarget "EyeLink_Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C8BCB11BF7052100F6CF71 /* Debug */,
+				35C8BCB21BF7052100F6CF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C8BCB31BF7052100F6CF71 /* Build configuration list for PBXNativeTarget "EyeLink_ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C8BCB41BF7052100F6CF71 /* Debug */,
+				35C8BCB51BF7052100F6CF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C8BCB61BF7052100F6CF71 /* Build configuration list for PBXNativeTarget "EyeLink_ClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35C8BCB71BF7052100F6CF71 /* Debug */,
+				35C8BCB81BF7052100F6CF71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35C8BC801BF7052000F6CF71 /* Project object */;
+}
