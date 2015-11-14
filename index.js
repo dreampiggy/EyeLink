@@ -6,9 +6,10 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.use(express.static(__dirname + '/public'));
-app.use(cookieParser());
+app.use(cookieParser('eyelink'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 
 router.route(app);
 
