@@ -145,20 +145,13 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
     }
     
     @IBAction func gotoVideo(sender: AnyObject) {
-        let path = "http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8"
-//        let parameters = NSMutableDictionary()
-        
-        // disable deinterlacing for iPhone, because it's complex operation can cause stuttering
-//        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-//            parameters[KxMovieParameterDisableDeinterlacing] = true;
-//        }
+        let path = "rtsp://192.168.1.102:8080/"
         let vc = KxMovieViewController.movieViewControllerWithContentPath(path, parameters: nil) as! KxMovieViewController
         self.navigationController?.navigationBarHidden = true
         self.navigationController?.pushViewController(vc, animated: true)
        
     }
-    
-    
+
     /*
     // MARK: - Navigation
 

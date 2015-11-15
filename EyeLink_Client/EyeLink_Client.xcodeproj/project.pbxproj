@@ -8,6 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		35B5463A1BF7454C0047D3E4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B546391BF7454C0047D3E4 /* CustomNavigationController.swift */; };
+		35B546411BF781120047D3E4 /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B5463C1BF781120047D3E4 /* SMS_SDKLocalizable.strings */; };
+		35B546421BF781120047D3E4 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B5463E1BF781120047D3E4 /* MOBFoundation.framework */; };
+		35B546431BF781120047D3E4 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B5463F1BF781120047D3E4 /* SMS_SDK.framework */; };
+		35B546451BF781430047D3E4 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B546441BF781430047D3E4 /* libicucore.tbd */; };
+		35B546471BF781590047D3E4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B546461BF781590047D3E4 /* MessageUI.framework */; };
+		35B546491BF781700047D3E4 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B546481BF781700047D3E4 /* JavaScriptCore.framework */; };
+		35B5464B1BF7817E0047D3E4 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B5464A1BF7817E0047D3E4 /* libstdc++.tbd */; };
+		35B546561BF789080047D3E4 /* NSDictionary-DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5464F1BF789080047D3E4 /* NSDictionary-DeepMutableCopy.m */; };
+		35B546571BF789080047D3E4 /* SMS_HYZBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546511BF789080047D3E4 /* SMS_HYZBadgeView.m */; };
+		35B546581BF789080047D3E4 /* SMS_MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546531BF789080047D3E4 /* SMS_MBProgressHUD+Add.m */; };
+		35B546591BF789080047D3E4 /* SMS_MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546551BF789080047D3E4 /* SMS_MBProgressHUD.m */; };
+		35B5466E1BF789100047D3E4 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5465C1BF789100047D3E4 /* CustomCell.m */; };
+		35B5466F1BF789100047D3E4 /* InvitationViewControllerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5465E1BF789100047D3E4 /* InvitationViewControllerEx.m */; };
+		35B546701BF789100047D3E4 /* RegisterByVoiceCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546611BF789100047D3E4 /* RegisterByVoiceCallViewController.m */; };
+		35B546711BF789100047D3E4 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546631BF789100047D3E4 /* SubmitViewController.m */; };
+		35B546721BF789100047D3E4 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546661BF789100047D3E4 /* RegViewController.m */; };
+		35B546731BF789100047D3E4 /* SectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546681BF789100047D3E4 /* SectionsViewController.m */; };
+		35B546741BF789100047D3E4 /* SectionsViewControllerFriends.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5466A1BF789100047D3E4 /* SectionsViewControllerFriends.m */; };
+		35B546751BF789100047D3E4 /* smssdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35B5466B1BF789100047D3E4 /* smssdk.bundle */; };
+		35B546791BF78D880047D3E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B546781BF78D880047D3E4 /* LoginViewController.swift */; };
+		35B5467C1BF78F0F0047D3E4 /* VerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5467B1BF78F0F0047D3E4 /* VerifyViewController.m */; };
+		35B546841BF79C390047D3E4 /* country.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35B546811BF79C390047D3E4 /* country.plist */; };
+		35B546851BF79C390047D3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B546821BF79C390047D3E4 /* InfoPlist.strings */; };
+		35B546861BF79C390047D3E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B546831BF79C390047D3E4 /* Localizable.strings */; };
+		35B5468A1BF79C950047D3E4 /* country.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35B546871BF79C950047D3E4 /* country.plist */; };
+		35B5468B1BF79C950047D3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B546881BF79C950047D3E4 /* InfoPlist.strings */; };
+		35B5468C1BF79C950047D3E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B546891BF79C950047D3E4 /* Localizable.strings */; };
+		35B5468F1BF7A3660047D3E4 /* pwdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5468D1BF7A3660047D3E4 /* pwdVC.swift */; };
+		35B546901BF7A3660047D3E4 /* pwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35B5468E1BF7A3660047D3E4 /* pwdVC.xib */; };
 		35C8BC8C1BF7052000F6CF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BC8B1BF7052000F6CF71 /* AppDelegate.swift */; };
 		35C8BC8E1BF7052000F6CF71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BC8D1BF7052000F6CF71 /* ViewController.swift */; };
 		35C8BC911BF7052000F6CF71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BC8F1BF7052000F6CF71 /* Main.storyboard */; };
@@ -80,6 +109,48 @@
 
 /* Begin PBXFileReference section */
 		35B546391BF7454C0047D3E4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		35B5463D1BF781120047D3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
+		35B5463E1BF781120047D3E4 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		35B5463F1BF781120047D3E4 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		35B546401BF781120047D3E4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
+		35B546441BF781430047D3E4 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		35B546461BF781590047D3E4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		35B546481BF781700047D3E4 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		35B5464A1BF7817E0047D3E4 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		35B5464E1BF789080047D3E4 /* NSDictionary-DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-DeepMutableCopy.h"; sourceTree = "<group>"; };
+		35B5464F1BF789080047D3E4 /* NSDictionary-DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary-DeepMutableCopy.m"; sourceTree = "<group>"; };
+		35B546501BF789080047D3E4 /* SMS_HYZBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMS_HYZBadgeView.h; sourceTree = "<group>"; };
+		35B546511BF789080047D3E4 /* SMS_HYZBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMS_HYZBadgeView.m; sourceTree = "<group>"; };
+		35B546521BF789080047D3E4 /* SMS_MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMS_MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		35B546531BF789080047D3E4 /* SMS_MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SMS_MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		35B546541BF789080047D3E4 /* SMS_MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMS_MBProgressHUD.h; sourceTree = "<group>"; };
+		35B546551BF789080047D3E4 /* SMS_MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMS_MBProgressHUD.m; sourceTree = "<group>"; };
+		35B5465B1BF789100047D3E4 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		35B5465C1BF789100047D3E4 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		35B5465D1BF789100047D3E4 /* InvitationViewControllerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitationViewControllerEx.h; sourceTree = "<group>"; };
+		35B5465E1BF789100047D3E4 /* InvitationViewControllerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitationViewControllerEx.m; sourceTree = "<group>"; };
+		35B546601BF789100047D3E4 /* RegisterByVoiceCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterByVoiceCallViewController.h; sourceTree = "<group>"; };
+		35B546611BF789100047D3E4 /* RegisterByVoiceCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterByVoiceCallViewController.m; sourceTree = "<group>"; };
+		35B546621BF789100047D3E4 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		35B546631BF789100047D3E4 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		35B546651BF789100047D3E4 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
+		35B546661BF789100047D3E4 /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
+		35B546671BF789100047D3E4 /* SectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsViewController.h; sourceTree = "<group>"; };
+		35B546681BF789100047D3E4 /* SectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsViewController.m; sourceTree = "<group>"; };
+		35B546691BF789100047D3E4 /* SectionsViewControllerFriends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsViewControllerFriends.h; sourceTree = "<group>"; };
+		35B5466A1BF789100047D3E4 /* SectionsViewControllerFriends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsViewControllerFriends.m; sourceTree = "<group>"; };
+		35B5466B1BF789100047D3E4 /* smssdk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = smssdk.bundle; sourceTree = "<group>"; };
+		35B546781BF78D880047D3E4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		35B5467A1BF78F0F0047D3E4 /* VerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyViewController.h; sourceTree = "<group>"; };
+		35B5467B1BF78F0F0047D3E4 /* VerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyViewController.m; sourceTree = "<group>"; };
+		35B546811BF79C390047D3E4 /* country.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = country.plist; sourceTree = "<group>"; };
+		35B546821BF79C390047D3E4 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		35B546831BF79C390047D3E4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		35B546871BF79C950047D3E4 /* country.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = country.plist; sourceTree = "<group>"; };
+		35B546881BF79C950047D3E4 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		35B546891BF79C950047D3E4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		35B5468D1BF7A3660047D3E4 /* pwdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pwdVC.swift; sourceTree = "<group>"; };
+		35B5468E1BF7A3660047D3E4 /* pwdVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pwdVC.xib; sourceTree = "<group>"; };
 		35C8BC881BF7052000F6CF71 /* EyeLink_Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeLink_Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C8BC8B1BF7052000F6CF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C8BC8D1BF7052000F6CF71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +229,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B5464B1BF7817E0047D3E4 /* libstdc++.tbd in Frameworks */,
+				35B546491BF781700047D3E4 /* JavaScriptCore.framework in Frameworks */,
+				35B546471BF781590047D3E4 /* MessageUI.framework in Frameworks */,
+				35B546451BF781430047D3E4 /* libicucore.tbd in Frameworks */,
+				35B546421BF781120047D3E4 /* MOBFoundation.framework in Frameworks */,
 				35C8BD2A1BF739F600F6CF71 /* libavcodec.a in Frameworks */,
 				35C8BD2B1BF739F600F6CF71 /* libavdevice.a in Frameworks */,
 				35C8BD2C1BF739F600F6CF71 /* libavfilter.a in Frameworks */,
@@ -179,6 +255,7 @@
 				35C8BD021BF736C900F6CF71 /* Accelerate.framework in Frameworks */,
 				35C8BD001BF736BF00F6CF71 /* QuartzCore.framework in Frameworks */,
 				35C8BCFE1BF736B300F6CF71 /* OpenGLES.framework in Frameworks */,
+				35B546431BF781120047D3E4 /* SMS_SDK.framework in Frameworks */,
 				35C8BCFC1BF736A900F6CF71 /* libbz2.1.0.tbd in Frameworks */,
 				EF2A09E03271B5C8995F6243 /* Pods.framework in Frameworks */,
 			);
@@ -201,6 +278,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B5463B1BF781120047D3E4 /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				35B5463C1BF781120047D3E4 /* SMS_SDKLocalizable.strings */,
+				35B5463E1BF781120047D3E4 /* MOBFoundation.framework */,
+				35B5463F1BF781120047D3E4 /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
+		35B5464D1BF789080047D3E4 /* SMS_UILib */ = {
+			isa = PBXGroup;
+			children = (
+				35B5464E1BF789080047D3E4 /* NSDictionary-DeepMutableCopy.h */,
+				35B5464F1BF789080047D3E4 /* NSDictionary-DeepMutableCopy.m */,
+				35B546501BF789080047D3E4 /* SMS_HYZBadgeView.h */,
+				35B546511BF789080047D3E4 /* SMS_HYZBadgeView.m */,
+				35B546521BF789080047D3E4 /* SMS_MBProgressHUD+Add.h */,
+				35B546531BF789080047D3E4 /* SMS_MBProgressHUD+Add.m */,
+				35B546541BF789080047D3E4 /* SMS_MBProgressHUD.h */,
+				35B546551BF789080047D3E4 /* SMS_MBProgressHUD.m */,
+			);
+			path = SMS_UILib;
+			sourceTree = "<group>";
+		};
+		35B5465A1BF789100047D3E4 /* SMS_RegisterUI */ = {
+			isa = PBXGroup;
+			children = (
+				35B5465B1BF789100047D3E4 /* CustomCell.h */,
+				35B5465C1BF789100047D3E4 /* CustomCell.m */,
+				35B5465D1BF789100047D3E4 /* InvitationViewControllerEx.h */,
+				35B5465E1BF789100047D3E4 /* InvitationViewControllerEx.m */,
+				35B5465F1BF789100047D3E4 /* Register By Voice Call */,
+				35B546641BF789100047D3E4 /* Rigister By SMS */,
+				35B546671BF789100047D3E4 /* SectionsViewController.h */,
+				35B546681BF789100047D3E4 /* SectionsViewController.m */,
+				35B546691BF789100047D3E4 /* SectionsViewControllerFriends.h */,
+				35B5466A1BF789100047D3E4 /* SectionsViewControllerFriends.m */,
+				35B5466B1BF789100047D3E4 /* smssdk.bundle */,
+			);
+			name = SMS_RegisterUI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		35B5465F1BF789100047D3E4 /* Register By Voice Call */ = {
+			isa = PBXGroup;
+			children = (
+				35B546601BF789100047D3E4 /* RegisterByVoiceCallViewController.h */,
+				35B546611BF789100047D3E4 /* RegisterByVoiceCallViewController.m */,
+				35B546621BF789100047D3E4 /* SubmitViewController.h */,
+				35B546631BF789100047D3E4 /* SubmitViewController.m */,
+			);
+			path = "Register By Voice Call";
+			sourceTree = "<group>";
+		};
+		35B546641BF789100047D3E4 /* Rigister By SMS */ = {
+			isa = PBXGroup;
+			children = (
+				35B546651BF789100047D3E4 /* RegViewController.h */,
+				35B546661BF789100047D3E4 /* RegViewController.m */,
+				35B5467A1BF78F0F0047D3E4 /* VerifyViewController.h */,
+				35B5467B1BF78F0F0047D3E4 /* VerifyViewController.m */,
+			);
+			path = "Rigister By SMS";
+			sourceTree = "<group>";
+		};
+		35B546771BF789BE0047D3E4 /* personalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				35B546781BF78D880047D3E4 /* LoginViewController.swift */,
+				35B5468D1BF7A3660047D3E4 /* pwdVC.swift */,
+				35B5468E1BF7A3660047D3E4 /* pwdVC.xib */,
+			);
+			name = personalInfo;
+			sourceTree = "<group>";
+		};
 		35C8BC7F1BF7052000F6CF71 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +389,12 @@
 				35C8BC921BF7052000F6CF71 /* Assets.xcassets */,
 				35C8BC941BF7052000F6CF71 /* LaunchScreen.storyboard */,
 				35C8BC971BF7052000F6CF71 /* Info.plist */,
+				35B546811BF79C390047D3E4 /* country.plist */,
+				35B546821BF79C390047D3E4 /* InfoPlist.strings */,
+				35B546831BF79C390047D3E4 /* Localizable.strings */,
+				35B546871BF79C950047D3E4 /* country.plist */,
+				35B546881BF79C950047D3E4 /* InfoPlist.strings */,
+				35B546891BF79C950047D3E4 /* Localizable.strings */,
 			);
 			path = EyeLink_Client;
 			sourceTree = "<group>";
@@ -280,6 +439,7 @@
 		35C8BCCB1BF7081800F6CF71 /* SwiftSources */ = {
 			isa = PBXGroup;
 			children = (
+				35B546771BF789BE0047D3E4 /* personalInfo */,
 				35C8BCE51BF7317400F6CF71 /* video */,
 				35C8BCD01BF709B500F6CF71 /* photo */,
 			);
@@ -300,6 +460,9 @@
 		35C8BCD51BF70FE000F6CF71 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				35B5465A1BF789100047D3E4 /* SMS_RegisterUI */,
+				35B5464D1BF789080047D3E4 /* SMS_UILib */,
+				35B5463B1BF781120047D3E4 /* SMS_SDK */,
 				35C8BCEA1BF7366200F6CF71 /* kxmovie */,
 				35C8BCDB1BF7212E00F6CF71 /* EasyTimeline */,
 				35C8BCC11BF7072400F6CF71 /* ProgressHUD */,
@@ -364,6 +527,10 @@
 		71AAB72249729EAC34C8508C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35B5464A1BF7817E0047D3E4 /* libstdc++.tbd */,
+				35B546481BF781700047D3E4 /* JavaScriptCore.framework */,
+				35B546461BF781590047D3E4 /* MessageUI.framework */,
+				35B546441BF781430047D3E4 /* libicucore.tbd */,
 				35C8BD231BF739F600F6CF71 /* libavcodec.a */,
 				35C8BD241BF739F600F6CF71 /* libavdevice.a */,
 				35C8BD251BF739F600F6CF71 /* libavfilter.a */,
@@ -471,7 +638,7 @@
 				TargetAttributes = {
 					35C8BC871BF7052000F6CF71 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = TV6QKK88A3;
+						DevelopmentTeam = 263A99S975;
 					};
 					35C8BC9B1BF7052100F6CF71 = {
 						CreatedOnToolsVersion = 7.1;
@@ -492,6 +659,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 35C8BC7F1BF7052000F6CF71;
 			productRefGroup = 35C8BC891BF7052000F6CF71 /* Products */;
@@ -510,13 +678,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B546841BF79C390047D3E4 /* country.plist in Resources */,
+				35B5468A1BF79C950047D3E4 /* country.plist in Resources */,
+				35B546901BF7A3660047D3E4 /* pwdVC.xib in Resources */,
+				35B546851BF79C390047D3E4 /* InfoPlist.strings in Resources */,
 				35C8BCC51BF7072400F6CF71 /* ProgressHUD.bundle in Resources */,
+				35B5468B1BF79C950047D3E4 /* InfoPlist.strings in Resources */,
 				35C8BCF71BF7366200F6CF71 /* kxmovie.bundle in Resources */,
 				35C8BC961BF7052000F6CF71 /* LaunchScreen.storyboard in Resources */,
 				35C8BCD41BF709D100F6CF71 /* photoCell.xib in Resources */,
 				35C8BCCF1BF7095100F6CF71 /* photoVC.xib in Resources */,
 				35C8BC931BF7052000F6CF71 /* Assets.xcassets in Resources */,
+				35B546751BF789100047D3E4 /* smssdk.bundle in Resources */,
+				35B546861BF79C390047D3E4 /* Localizable.strings in Resources */,
 				35C8BCE91BF731B500F6CF71 /* VideoVC.xib in Resources */,
+				35B5468C1BF79C950047D3E4 /* Localizable.strings in Resources */,
+				35B546411BF781120047D3E4 /* SMS_SDKLocalizable.strings in Resources */,
 				35C8BC911BF7052000F6CF71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,14 +768,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				35C8BCFA1BF7366200F6CF71 /* KxMovieViewController.m in Sources */,
+				35B5466F1BF789100047D3E4 /* InvitationViewControllerEx.m in Sources */,
+				35B546591BF789080047D3E4 /* SMS_MBProgressHUD.m in Sources */,
+				35B5466E1BF789100047D3E4 /* CustomCell.m in Sources */,
+				35B546711BF789100047D3E4 /* SubmitViewController.m in Sources */,
+				35B546731BF789100047D3E4 /* SectionsViewController.m in Sources */,
+				35B546581BF789080047D3E4 /* SMS_MBProgressHUD+Add.m in Sources */,
 				35C8BCF61BF7366200F6CF71 /* KxAudioManager.m in Sources */,
+				35B5468F1BF7A3660047D3E4 /* pwdVC.swift in Sources */,
+				35B546741BF789100047D3E4 /* SectionsViewControllerFriends.m in Sources */,
 				35C8BCCE1BF7095100F6CF71 /* photoVC.swift in Sources */,
 				35C8BC8E1BF7052000F6CF71 /* ViewController.swift in Sources */,
+				35B546791BF78D880047D3E4 /* LoginViewController.swift in Sources */,
 				35C8BCCA1BF7078000F6CF71 /* Consts.swift in Sources */,
 				35C8BCF81BF7366200F6CF71 /* KxMovieDecoder.m in Sources */,
 				35C8BC8C1BF7052000F6CF71 /* AppDelegate.swift in Sources */,
 				35C8BCE81BF731B500F6CF71 /* VideoVC.swift in Sources */,
+				35B546561BF789080047D3E4 /* NSDictionary-DeepMutableCopy.m in Sources */,
 				35C8BCD71BF70FFA00F6CF71 /* YoYoAPI.swift in Sources */,
+				35B5467C1BF78F0F0047D3E4 /* VerifyViewController.m in Sources */,
+				35B546721BF789100047D3E4 /* RegViewController.m in Sources */,
 				35C8BCE31BF7212E00F6CF71 /* EasyTimelineEvent.m in Sources */,
 				35C8BCF91BF7366200F6CF71 /* KxMovieGLView.m in Sources */,
 				35C8BCE21BF7212E00F6CF71 /* EasyTimeline.m in Sources */,
@@ -608,7 +797,9 @@
 				35C8BCD91BF7102C00F6CF71 /* Config.swift in Sources */,
 				35C8BCC81BF7076400F6CF71 /* Tool.swift in Sources */,
 				35B5463A1BF7454C0047D3E4 /* CustomNavigationController.swift in Sources */,
+				35B546701BF789100047D3E4 /* RegisterByVoiceCallViewController.m in Sources */,
 				35C8BCC01BF7069300F6CF71 /* CheckNetwork.m in Sources */,
+				35B546571BF789080047D3E4 /* SMS_HYZBadgeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +835,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		35B5463C1BF781120047D3E4 /* SMS_SDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35B5463D1BF781120047D3E4 /* en */,
+				35B546401BF781120047D3E4 /* zh-Hans */,
+			);
+			name = SMS_SDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		35C8BC8F1BF7052000F6CF71 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -750,9 +950,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"$(inherited)",
+					"$(PROJECT_DIR)/EyeLink_Client/SMS_SDK",
 				);
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs/FFmpeg\"";
 				INFOPLIST_FILE = EyeLink_Client/Info.plist;
@@ -763,8 +966,9 @@
 					"$(PROJECT_DIR)/libs",
 					"\"$(SRCROOT)/libs\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-Client";
+				PRODUCT_BUNDLE_IDENTIFIER = EyeLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EyeLink_Client/EyeLink_Client-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -776,9 +980,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"$(inherited)",
+					"$(PROJECT_DIR)/EyeLink_Client/SMS_SDK",
 				);
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs/FFmpeg\"";
 				INFOPLIST_FILE = EyeLink_Client/Info.plist;
@@ -789,8 +996,9 @@
 					"$(PROJECT_DIR)/libs",
 					"\"$(SRCROOT)/libs\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zhaolei.EyeLink-Client";
+				PRODUCT_BUNDLE_IDENTIFIER = EyeLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EyeLink_Client/EyeLink_Client-Bridging-Header.h";
 			};
 			name = Release;

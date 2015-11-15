@@ -16,13 +16,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let vc = photoVC()
+//        let vc = photoVC()
+        let vc = LoginViewController()
         var navi = CustomNavigationController()
         navi = CustomNavigationController(rootViewController: vc)
         self.window?.rootViewController = navi
+        
+//      注册远程推送通知(该方法限iOS 8.0+)
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+        SMSSDK.registerApp("c4f0a28c4513", withSecret: "5a60d2e88c8e16d077d554a1f7905e45")
+        
+        
         return true
     }
 
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        print("远程推送注册成功!\(deviceToken)")
+//        服务端应将token存储在数据库中改，以备以后重复使用
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        print("远程推送注册失败!\(error)")
+    }
+    
+//  收到远程推送通知后（限iOS 8.0+）
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        
+        let notif = userInfo as NSDictionary
+        
+        let apsDic = notif.objectForKey("aps") as! NSDictionary
+        
+        let alertDic = apsDic.objectForKey("alert") as! String
+        
+//        let alertView = UIAlertView (title: " 远程推送通知 " , message: alertDic, delegate: nil , cancelButtonTitle: " 返回 " )
+        print(alertDic)
+        
+        let alertController = UIAlertController(title: "监控通知!", message: alertDic, preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil)
+        let alertAction = UIAlertAction(title: "报警", style: UIAlertActionStyle.Destructive) { (action) -> Void in
+            self.callPhone(action)
+        }
+        alertController.addAction(alertAction)
+        alertController.addAction(cancelAction)
+        self.window?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func callPhone(sender:AnyObject){
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel:110")!)
+    }
+    
+    
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
