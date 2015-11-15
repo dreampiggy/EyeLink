@@ -61,8 +61,16 @@ pip install picamera flask simpleCV requests apn
 
 + iOS -- OS X 10.11 & Xcode 7
 
+需要CocoaPods，若国内gem安装慢，请先更换[RubyGem镜像](https://ruby.taobao.org)
+
 ```
-pods install
+sudo gem install cocoapods
+```
+
+之后，进入iOS项目目录
+
+```
+pod install
 ```
 
 # Config
