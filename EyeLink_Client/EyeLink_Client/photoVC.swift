@@ -82,18 +82,11 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
         }
         setUpOnlineData("photo")
         
-//        let btnView = ButtonAnimations(frame: CGRectMake(10,350,self.view.bounds.size.width, 80))
-//        self.view.addSubview(btnView)
-//        
-//        btnView.setNeedsDisplay(["3","5","10"] as! [String]!)
-//        btnView.sendCar { (sendType, sendPrice) -> Void in
-//            
-//        }
     }
     
     func setUpActions(){
         self.api.delegate = self
-//        timeline.delegate = self
+        timeline.delegate = self
         
         let nib = UINib(nibName: "photoCell", bundle: nil)
         self.table.registerNib(nib, forCellReuseIdentifier: "photoCell")
@@ -102,7 +95,6 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
     func setUpOnlineData(tag:String){
         if(tag == "photo"){
             self.photoURL = "\(Consts.mainUrl)photo/history?page=1"
-//            self.photoURL = "http://wwww.baidu.com"
             api.httpRequest("GET", url: self.photoURL, params: nil, tag: "photo")
             
         }else{
@@ -165,11 +157,9 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
 //    }
 
     func btnClicked(sender: UIButton) {
+        
 //            开始拍照并接收图片
-
         setUpOnlineData("shoot")
-        
-        
     }
 
     /*

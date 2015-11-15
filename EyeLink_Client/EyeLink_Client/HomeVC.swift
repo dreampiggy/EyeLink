@@ -54,7 +54,6 @@ class HomeVC: UIViewController {
         let path = "rtsp://223.3.117.17:8554/"
         let vc = KxMovieViewController.movieViewControllerWithContentPath(path, parameters: nil) as! KxMovieViewController
         self.navigationController?.navigationBarHidden = true
-//        self.navigationController?.pushViewController(vc, animated: true)
         self.navigationController?.presentViewController(vc, animated: true, completion: nil)
     }
 

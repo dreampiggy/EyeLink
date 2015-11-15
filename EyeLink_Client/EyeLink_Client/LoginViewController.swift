@@ -166,15 +166,9 @@ class LoginViewController: UIViewController,APIDelegate{
                             self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
                         }else{
                             //                        输出失败信息
-//                            print("get请求失败!\nurl ——> \()\nerror ——> \(response.result.error)")
-                            Tool.showSuccessHUD("登录成功!")
-                            self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
-                        }
+                            print("get请求失败!error ——> \(response.result.error)")
                 }
-            break
-            
-            case "info":
-                
+            }
             break
 
             default:
@@ -184,12 +178,9 @@ class LoginViewController: UIViewController,APIDelegate{
     
     func didReceiveJsonResults(json: JSON, tag: String) {
         switch(tag){
+            
             case "login":
                 self.goBack()
-            break
-            
-            case "info":
-
             break
 
         default:
@@ -207,11 +198,7 @@ class LoginViewController: UIViewController,APIDelegate{
         else if !Consts.checkPassword(pwd){
             Tool.showErrorHUD("密码至少6位!")
         }else{
-            //let vc = photoVC()
-            //self.navigationController?.pushViewController(vc, animated: true)
-//            setUpOnlineData("login")
-            Tool.showSuccessHUD("登录成功!")
-            self.navigationController?.popViewControllerAnimated(true)
+            setUpOnlineData("login")
         }
     }
     

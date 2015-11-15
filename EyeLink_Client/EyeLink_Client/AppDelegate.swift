@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navi.navigationBarHidden = true
         self.window?.rootViewController = navi
         
-//      注册远程推送通知(该方法限iOS 8.0+)
+//      注册远程推送通知(iOS 8.0+)
         let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         UIApplication.sharedApplication().registerForRemoteNotifications()
@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("远程推送注册失败!\(error)")
     }
     
-//  收到远程推送通知后（限iOS 8.0+）
+//  收到远程推送通知后（iOS 8.0+）
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
         
         let notif = userInfo as NSDictionary
@@ -52,10 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let apsDic = notif.objectForKey("aps") as! NSDictionary
         
         let alertDic = apsDic.objectForKey("alert") as! String
-        
-//        let alertView = UIAlertView (title: " 远程推送通知 " , message: alertDic, delegate: nil , cancelButtonTitle: " 返回 " )
-        print(alertDic)
-        
+
         let alertController = UIAlertController(title: "监控通知!", message: alertDic, preferredStyle: .Alert)
         let alertAction = UIAlertAction(title: "报警", style: UIAlertActionStyle.Destructive) { (action) -> Void in
             self.callPhone(action)

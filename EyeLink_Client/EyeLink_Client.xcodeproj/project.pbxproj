@@ -60,8 +60,6 @@
 		35C8BCE21BF7212E00F6CF71 /* EasyTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCDD1BF7212E00F6CF71 /* EasyTimeline.m */; };
 		35C8BCE31BF7212E00F6CF71 /* EasyTimelineEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCDF1BF7212E00F6CF71 /* EasyTimelineEvent.m */; };
 		35C8BCE41BF7212E00F6CF71 /* NSTimer+EasyTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCE11BF7212E00F6CF71 /* NSTimer+EasyTimeline.m */; };
-		35C8BCE81BF731B500F6CF71 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCE61BF731B500F6CF71 /* VideoVC.swift */; };
-		35C8BCE91BF731B500F6CF71 /* VideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BCE71BF731B500F6CF71 /* VideoVC.xib */; };
 		35C8BCF61BF7366200F6CF71 /* KxAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCEC1BF7366200F6CF71 /* KxAudioManager.m */; };
 		35C8BCF71BF7366200F6CF71 /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BCEF1BF7366200F6CF71 /* kxmovie.bundle */; };
 		35C8BCF81BF7366200F6CF71 /* KxMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BCF11BF7366200F6CF71 /* KxMovieDecoder.m */; };
@@ -190,8 +188,6 @@
 		35C8BCDF1BF7212E00F6CF71 /* EasyTimelineEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTimelineEvent.m; sourceTree = "<group>"; };
 		35C8BCE01BF7212E00F6CF71 /* NSTimer+EasyTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EasyTimeline.h"; sourceTree = "<group>"; };
 		35C8BCE11BF7212E00F6CF71 /* NSTimer+EasyTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EasyTimeline.m"; sourceTree = "<group>"; };
-		35C8BCE61BF731B500F6CF71 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
-		35C8BCE71BF731B500F6CF71 /* VideoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoVC.xib; sourceTree = "<group>"; };
 		35C8BCEB1BF7366200F6CF71 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
 		35C8BCEC1BF7366200F6CF71 /* KxAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxAudioManager.m; sourceTree = "<group>"; };
 		35C8BCED1BF7366200F6CF71 /* KxLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
@@ -352,14 +348,14 @@
 			path = "Rigister By SMS";
 			sourceTree = "<group>";
 		};
-		35B546771BF789BE0047D3E4 /* personalInfo */ = {
+		35B546771BF789BE0047D3E4 /* LoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
 				35B546781BF78D880047D3E4 /* LoginViewController.swift */,
 				35B5468D1BF7A3660047D3E4 /* pwdVC.swift */,
 				35B5468E1BF7A3660047D3E4 /* pwdVC.xib */,
 			);
-			name = personalInfo;
+			name = LoginAndRegister;
 			sourceTree = "<group>";
 		};
 		35B546911BF819340047D3E4 /* btRippleButton */ = {
@@ -414,12 +410,7 @@
 				35C8BC921BF7052000F6CF71 /* Assets.xcassets */,
 				35C8BC941BF7052000F6CF71 /* LaunchScreen.storyboard */,
 				35C8BC971BF7052000F6CF71 /* Info.plist */,
-				35B546811BF79C390047D3E4 /* country.plist */,
-				35B546821BF79C390047D3E4 /* InfoPlist.strings */,
-				35B546831BF79C390047D3E4 /* Localizable.strings */,
-				35B546871BF79C950047D3E4 /* country.plist */,
-				35B546881BF79C950047D3E4 /* InfoPlist.strings */,
-				35B546891BF79C950047D3E4 /* Localizable.strings */,
+				35E2636E1BF868B900E7AABA /* support */,
 			);
 			path = EyeLink_Client;
 			sourceTree = "<group>";
@@ -465,8 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				35B546951BF8199C0047D3E4 /* home */,
-				35B546771BF789BE0047D3E4 /* personalInfo */,
-				35C8BCE51BF7317400F6CF71 /* video */,
+				35B546771BF789BE0047D3E4 /* LoginAndRegister */,
 				35C8BCD01BF709B500F6CF71 /* photo */,
 			);
 			name = SwiftSources;
@@ -525,15 +515,6 @@
 			path = ProgressHUD/EasyTimeline;
 			sourceTree = "<group>";
 		};
-		35C8BCE51BF7317400F6CF71 /* video */ = {
-			isa = PBXGroup;
-			children = (
-				35C8BCE61BF731B500F6CF71 /* VideoVC.swift */,
-				35C8BCE71BF731B500F6CF71 /* VideoVC.xib */,
-			);
-			name = video;
-			sourceTree = "<group>";
-		};
 		35C8BCEA1BF7366200F6CF71 /* kxmovie */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +540,19 @@
 				35E2636C1BF8249000E7AABA /* ButtonAnimations.m */,
 			);
 			name = ButtonAnimation;
+			sourceTree = "<group>";
+		};
+		35E2636E1BF868B900E7AABA /* support */ = {
+			isa = PBXGroup;
+			children = (
+				35B546811BF79C390047D3E4 /* country.plist */,
+				35B546821BF79C390047D3E4 /* InfoPlist.strings */,
+				35B546831BF79C390047D3E4 /* Localizable.strings */,
+				35B546871BF79C950047D3E4 /* country.plist */,
+				35B546881BF79C950047D3E4 /* InfoPlist.strings */,
+				35B546891BF79C950047D3E4 /* Localizable.strings */,
+			);
+			name = support;
 			sourceTree = "<group>";
 		};
 		71AAB72249729EAC34C8508C /* Frameworks */ = {
@@ -728,7 +722,6 @@
 				35C8BC931BF7052000F6CF71 /* Assets.xcassets in Resources */,
 				35B546751BF789100047D3E4 /* smssdk.bundle in Resources */,
 				35B546861BF79C390047D3E4 /* Localizable.strings in Resources */,
-				35C8BCE91BF731B500F6CF71 /* VideoVC.xib in Resources */,
 				35B5468C1BF79C950047D3E4 /* Localizable.strings in Resources */,
 				35B546411BF781120047D3E4 /* SMS_SDKLocalizable.strings in Resources */,
 				35C8BC911BF7052000F6CF71 /* Main.storyboard in Resources */,
@@ -821,7 +814,6 @@
 				35C8BCCA1BF7078000F6CF71 /* Consts.swift in Sources */,
 				35C8BCF81BF7366200F6CF71 /* KxMovieDecoder.m in Sources */,
 				35C8BC8C1BF7052000F6CF71 /* AppDelegate.swift in Sources */,
-				35C8BCE81BF731B500F6CF71 /* VideoVC.swift in Sources */,
 				35B546561BF789080047D3E4 /* NSDictionary-DeepMutableCopy.m in Sources */,
 				35C8BCD71BF70FFA00F6CF71 /* YoYoAPI.swift in Sources */,
 				35B5467C1BF78F0F0047D3E4 /* VerifyViewController.m in Sources */,
