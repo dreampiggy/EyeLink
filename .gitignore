@@ -33,5 +33,7 @@ node_modules
 mongo
 
 # Static
-static/manul/*
-static/upload/*
+static/manul/
+static/upload/
+
+log/*

@@ -60,7 +60,37 @@ router.get('/capture',filter.authorize,function(req,res,next){
 
 //TODO get od photos
 router.get('/history',filter.authorize,function(req,res,next){
-    res.end('fine')
+    var dir = './static/upload';
+    fs.exists(dir,function(exists){
+        if(!exists){
+            res.statusCode=403;
+            res.end(dir+'not found')
+        }
+        fs.readdir(dir,function(err,files){
+            if(err){
+                res.statusCode=403;
+                log.error(err.toString());
+                res.end(err.toString());
+            }else {
+                res.contentType('text/plain');
+                if (files.size<1) {
+                    res.statusCode = 200;
+                    res.end('this is no history file.');
+                } else {
+                    var page = parseInt(req.query.page);
+                    var judge = (page-1)*10;
+                    var rst=[];
+                    for(var i=0;i<files.length;i++){
+                        if((i-judge)>=0&&(i-judge)<=9){
+                            rst.push(files[i])
+                        }
+                    }
+                    res.end(rst.map(function(e){return serverIP+'/image/upload/'+e}).toString());
+                }
+            }
+        })
+    })
+
 });
 
 //TODO get photos from rsp pi
