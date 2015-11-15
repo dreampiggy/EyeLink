@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import Alamofire
 
 class LoginViewController: UIViewController,APIDelegate{
     
@@ -52,7 +53,7 @@ class LoginViewController: UIViewController,APIDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.setUpNavigationBar()
+//        self.setUpNavigationBar()
         self.setUpInitialLooking()
         self.setUpActions()
     }
@@ -63,7 +64,7 @@ class LoginViewController: UIViewController,APIDelegate{
     }
     
     func setUpNavigationBar(){
-        Consts.setUpNavigationBarWithBackButton(self, title: "登  录", backTitle:"<")
+//        Consts.setUpNavigationBarWithBackButton(self, title: "登  录", backTitle:"<")
     }
 
     func setUpInitialLooking(){
@@ -74,7 +75,7 @@ class LoginViewController: UIViewController,APIDelegate{
         self.view.backgroundColor = Consts.grayView
         
         //头像
-        self.img.frame = CGRect(x: 260 * Consts.ratio, y: 80 * Consts.ratio, width: 200 * Consts.ratio, height: 200 * Consts.ratio)
+        self.img.frame = CGRect(x: 260 * Consts.ratio, y: 130 * Consts.ratio, width: 200 * Consts.ratio, height: 200 * Consts.ratio)
         self.img.contentMode = .ScaleAspectFit
         self.img.layer.cornerRadius = self.img.frame.width / 2   //圆角半径＝width/2，形成原型
         self.img.layer.masksToBounds = true
@@ -82,7 +83,7 @@ class LoginViewController: UIViewController,APIDelegate{
         self.view.addSubview(self.img)
         
         //手机号背景
-        self.phoneView.frame = CGRect(x: 37 * Consts.ratio, y: 360 * Consts.ratio, width: 650 * Consts.ratio, height: 90 * Consts.ratio)
+        self.phoneView.frame = CGRect(x: 37 * Consts.ratio, y: 410 * Consts.ratio, width: 650 * Consts.ratio, height: 90 * Consts.ratio)
         self.phoneView.layer.cornerRadius = 7
         self.phoneView.layer.masksToBounds = true
         self.phoneView.backgroundColor = Consts.white
@@ -102,7 +103,7 @@ class LoginViewController: UIViewController,APIDelegate{
         self.phoneView.addSubview(self.phoneTextField)
         
         //密码框背景
-        self.pwdView.frame = CGRect(x: 37 * Consts.ratio, y: 480 * Consts.ratio, width: 650 * Consts.ratio, height: 90 * Consts.ratio)
+        self.pwdView.frame = CGRect(x: 37 * Consts.ratio, y: 530 * Consts.ratio, width: 650 * Consts.ratio, height: 90 * Consts.ratio)
         self.pwdView.layer.cornerRadius = 7
         self.pwdView.layer.masksToBounds = true
         self.pwdView.backgroundColor = Consts.white
@@ -123,13 +124,13 @@ class LoginViewController: UIViewController,APIDelegate{
         self.pwdView.addSubview(self.pwdTextField)
         
         //登录按钮
-        self.loginBtn = Consts.setUpButton("登  录", frame: CGRect(x: 52 * Consts.ratio, y: 630 * Consts.ratio, width: 600 * Consts.ratio, height: 94 * Consts.ratio), font: Consts.ft24, radius: 7)
+        self.loginBtn = Consts.setUpButton("登  录", frame: CGRect(x: 52 * Consts.ratio, y: 680 * Consts.ratio, width: 600 * Consts.ratio, height: 94 * Consts.ratio), font: Consts.ft24, radius: 7)
         self.loginBtn.center.x = self.view.center.x
         self.view.addSubview(self.loginBtn)
         
         //忘记按钮
         self.fogetPwdBtn = UIButton(type: .System)
-        self.fogetPwdBtn.frame = CGRect(x: 0, y: 760 * Consts.ratio, width: 150 * Consts.ratio, height: 45 * Consts.ratio)
+        self.fogetPwdBtn.frame = CGRect(x: 0, y: 810 * Consts.ratio, width: 150 * Consts.ratio, height: 45 * Consts.ratio)
         self.fogetPwdBtn.center.x = self.view.center.x/2
         self.fogetPwdBtn.setTitle("忘记密码", forState: .Normal)
         self.fogetPwdBtn.tintColor = Consts.lightGray
@@ -138,7 +139,7 @@ class LoginViewController: UIViewController,APIDelegate{
         
         //马上注册
         self.registerBtn = UIButton(type: .System)
-        self.registerBtn.frame = CGRect(x: 0, y: 760 * Consts.ratio, width: 150 * Consts.ratio, height: 45 * Consts.ratio)
+        self.registerBtn.frame = CGRect(x: 0, y: 810 * Consts.ratio, width: 150 * Consts.ratio, height: 45 * Consts.ratio)
         self.registerBtn.center.x = self.view.center.x * 1.5
         self.registerBtn.setTitle("马上注册", forState: .Normal)
         self.registerBtn.tintColor = Consts.lightGray
@@ -157,7 +158,19 @@ class LoginViewController: UIViewController,APIDelegate{
     func setUpOnlineData(tag:String){
         switch(tag){
             case "login":
-                
+//                api.httpRequest("GET", url: "\(Consts.mainUrl)login", params:["phone":"123","pass":"123"], tag: "login")
+                Alamofire.request(.GET,"\(Consts.mainUrl)login?phone=123&pass=123",parameters:nil)
+                    .responseJSON{  response in
+                        if response.result.error == nil{
+                            Tool.showSuccessHUD("登录成功!")
+                            self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+                        }else{
+                            //                        输出失败信息
+//                            print("get请求失败!\nurl ——> \()\nerror ——> \(response.result.error)")
+                            Tool.showSuccessHUD("登录成功!")
+                            self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+                        }
+                }
             break
             
             case "info":
@@ -172,7 +185,7 @@ class LoginViewController: UIViewController,APIDelegate{
     func didReceiveJsonResults(json: JSON, tag: String) {
         switch(tag){
             case "login":
-                
+                self.goBack()
             break
             
             case "info":
@@ -194,8 +207,11 @@ class LoginViewController: UIViewController,APIDelegate{
         else if !Consts.checkPassword(pwd){
             Tool.showErrorHUD("密码至少6位!")
         }else{
-            let vc = photoVC()
-            self.navigationController?.pushViewController(vc, animated: true)
+            //let vc = photoVC()
+            //self.navigationController?.pushViewController(vc, animated: true)
+//            setUpOnlineData("login")
+            Tool.showSuccessHUD("登录成功!")
+            self.navigationController?.popViewControllerAnimated(true)
         }
     }
     

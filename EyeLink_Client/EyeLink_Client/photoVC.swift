@@ -30,10 +30,16 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
     
     var images:[NSURL] = []
     
+    var photosJSON:[JSON] = []
+    
+    var shootURL:String = ""
+    
+    var photoURL:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setUpNavigationBar()
+//        self.setUpNavigationBar()
         self.setUpInitialLooking()
         self.setUpActions()
         // Do any additional setup after loading the view.
@@ -50,24 +56,44 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
     }
 
     func setUpNavigationBar(){
-        Consts.setUpNavigationBarWithBackButton(self, title: "照片", backTitle: "")
+        Consts.setUpNavigationBarWithBackButton(self, title: "照片", backTitle: "<")
     }
     
     func setUpInitialLooking(){
+
+        let btn3 = BTRippleButtton(image:UIImage.init(named: "webcam-icon"), andFrame: CGRectMake(135, 420, 60, 60), andTarget: "btnClicked", andID: self)
+        btn3.setRippeEffectEnabled(true)
+        btn3.setRippleEffectWithColor(UIColor(colorLiteralRed: 204/255, green: 270/255, blue: 12/255, alpha: 1))
+        self.view.addSubview(btn3)
+        
+        
         self.view.backgroundColor = Consts.grayView
+        self.table.backgroundColor = Consts.grayView
 //        总时长timeline
-        timeline.duration = 3600.0
+//        timeline.duration = 3600.0
 //        接收图片间隔(s)
-        timeline.tickPeriod = 5.0
+//        timeline.tickPeriod = 3.0
 //        是否循环
 //        timeline.willLoop = false
         self.format.dateFormat = "HH:mm:ss"
         
+        if(photosJSON.count == 0){
+            self.table.separatorStyle =  UITableViewCellSeparatorStyle.None
+        }
+        setUpOnlineData("photo")
+        
+//        let btnView = ButtonAnimations(frame: CGRectMake(10,350,self.view.bounds.size.width, 80))
+//        self.view.addSubview(btnView)
+//        
+//        btnView.setNeedsDisplay(["3","5","10"] as! [String]!)
+//        btnView.sendCar { (sendType, sendPrice) -> Void in
+//            
+//        }
     }
     
     func setUpActions(){
         self.api.delegate = self
-        timeline.delegate = self
+//        timeline.delegate = self
         
         let nib = UINib(nibName: "photoCell", bundle: nil)
         self.table.registerNib(nib, forCellReuseIdentifier: "photoCell")
@@ -75,13 +101,19 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
     
     func setUpOnlineData(tag:String){
         if(tag == "photo"){
+            self.photoURL = "\(Consts.mainUrl)photo/history?page=1"
+//            self.photoURL = "http://wwww.baidu.com"
+            api.httpRequest("GET", url: self.photoURL, params: nil, tag: "photo")
             
+        }else{
+            self.shootURL = "\(Consts.mainUrl)photo/capture"
+            api.httpRequest("POST", url: self.shootURL, params: nil, tag: "shoot")
         }
     }
     
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return self.sectionCount
+        return photosJSON.count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -97,8 +129,9 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
     }
 
     func setuUpCell(cell:photoCell,atIndexPath indexPath:NSIndexPath){
-        cell.photoImgView.sd_setImageWithURL(images[indexPath.section], placeholderImage: nil)
-        cell.timeLabel?.text = times[indexPath.section]
+        let photoJSON = photosJSON[indexPath.section]
+        cell.photoImgView.sd_setImageWithURL(photoJSON["url"].URL!, placeholderImage: nil)
+        cell.timeLabel?.text = photoJSON["time"].string!
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -106,50 +139,37 @@ class photoVC: UIViewController,UITableViewDelegate,UITableViewDataSource,APIDel
     }
     
     func didReceiveJsonResults(json: JSON, tag: String) {
+        
         if(tag == "photo"){
-            
+            self.photosJSON = json.array!
+            print(json)
+            self.table.reloadData()
+        }else{
+            photosJSON.append(json)
         }
+        
+        self.table.reloadData()
+
+//        let indexPath = NSIndexPath(forRow: 0, inSection: photosJSON.count-1)
+//        self.table.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 179
+        return 195
     }
     
 //    达到时间间隔后执行事件
-    func tickAt(time: NSTimeInterval, forTimeline timeline: EasyTimeline!) {
-        sectionCount++
-        self.date = NSDate()
-        self.times.append(format.stringFromDate(date))
-        
-        self.images.append(NSURL(string: "http://7xnm33.com1.z0.glb.clouddn.com/5636187190c49063a04cab8e?imageView2/1/w/138/h/138/q/75")!)
-        
-        self.table.reloadData()
-        let indexPath = NSIndexPath(forRow: 0, inSection: sectionCount-1)
-        self.table.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Top, animated: true)
+//    func tickAt(time: NSTimeInterval, forTimeline timeline: EasyTimeline!) {
+//        sectionCount++
+//        setUpOnlineData("photo")
+//    }
 
-    }
-
-    @IBAction func btnClicked(sender: UIButton) {
-        if(sender.tag == 0){
+    func btnClicked(sender: UIButton) {
 //            开始拍照并接收图片
-            timeline.start()
-            sender.setTitle("停       止", forState: .Normal)
-            sender.tag = 1
-        }else{
-//            结束拍照
-            timeline.stop()
-            sender.setTitle("开       始", forState: .Normal)
-            sender.tag = 0
-        }
+
+        setUpOnlineData("shoot")
         
-    }
-    
-    @IBAction func gotoVideo(sender: AnyObject) {
-        let path = "rtsp://192.168.1.102:8080/"
-        let vc = KxMovieViewController.movieViewControllerWithContentPath(path, parameters: nil) as! KxMovieViewController
-        self.navigationController?.navigationBarHidden = true
-        self.navigationController?.pushViewController(vc, animated: true)
-       
+        
     }
 
     /*

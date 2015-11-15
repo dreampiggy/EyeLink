@@ -17,9 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 //        let vc = photoVC()
-        let vc = LoginViewController()
+//        let vc = LoginViewController()
+        let vc = HomeVC()
         var navi = CustomNavigationController()
         navi = CustomNavigationController(rootViewController: vc)
+        navi.navigationBarHidden = true
         self.window?.rootViewController = navi
         
 //      注册远程推送通知(该方法限iOS 8.0+)
@@ -55,12 +57,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(alertDic)
         
         let alertController = UIAlertController(title: "监控通知!", message: alertDic, preferredStyle: .Alert)
-        let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil)
         let alertAction = UIAlertAction(title: "报警", style: UIAlertActionStyle.Destructive) { (action) -> Void in
             self.callPhone(action)
         }
-        alertController.addAction(alertAction)
+        let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil)
         alertController.addAction(cancelAction)
+        alertController.addAction(alertAction)
+        
         self.window?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
     }
     

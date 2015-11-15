@@ -17,6 +17,8 @@
 #import <SMS_SDK/SMSSDK.h>
 #import "RegViewController.h"
 #import "VerifyViewController.h"
+#import "btRippleButtton.h"
+#import "ButtonAnimations.h"
 
 
 #ifdef __OBJC__

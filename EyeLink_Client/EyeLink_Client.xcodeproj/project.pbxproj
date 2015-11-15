@@ -37,6 +37,8 @@
 		35B5468C1BF79C950047D3E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35B546891BF79C950047D3E4 /* Localizable.strings */; };
 		35B5468F1BF7A3660047D3E4 /* pwdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B5468D1BF7A3660047D3E4 /* pwdVC.swift */; };
 		35B546901BF7A3660047D3E4 /* pwdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35B5468E1BF7A3660047D3E4 /* pwdVC.xib */; };
+		35B546941BF8193D0047D3E4 /* btRippleButtton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B546931BF8193D0047D3E4 /* btRippleButtton.m */; };
+		35B546971BF819BD0047D3E4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B546961BF819BD0047D3E4 /* HomeVC.swift */; };
 		35C8BC8C1BF7052000F6CF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BC8B1BF7052000F6CF71 /* AppDelegate.swift */; };
 		35C8BC8E1BF7052000F6CF71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8BC8D1BF7052000F6CF71 /* ViewController.swift */; };
 		35C8BC911BF7052000F6CF71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C8BC8F1BF7052000F6CF71 /* Main.storyboard */; };
@@ -87,6 +89,7 @@
 		35C8BD2E1BF739F600F6CF71 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD271BF739F600F6CF71 /* libavutil.a */; };
 		35C8BD2F1BF739F600F6CF71 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD281BF739F600F6CF71 /* libswresample.a */; };
 		35C8BD301BF739F600F6CF71 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C8BD291BF739F600F6CF71 /* libswscale.a */; };
+		35E2636D1BF8249000E7AABA /* ButtonAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E2636C1BF8249000E7AABA /* ButtonAnimations.m */; };
 		EF2A09E03271B5C8995F6243 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A525430D6807EC2DC664EE /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +154,9 @@
 		35B546891BF79C950047D3E4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		35B5468D1BF7A3660047D3E4 /* pwdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pwdVC.swift; sourceTree = "<group>"; };
 		35B5468E1BF7A3660047D3E4 /* pwdVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pwdVC.xib; sourceTree = "<group>"; };
+		35B546921BF8193D0047D3E4 /* btRippleButtton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btRippleButtton.h; sourceTree = "<group>"; };
+		35B546931BF8193D0047D3E4 /* btRippleButtton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = btRippleButtton.m; sourceTree = "<group>"; };
+		35B546961BF819BD0047D3E4 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		35C8BC881BF7052000F6CF71 /* EyeLink_Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeLink_Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C8BC8B1BF7052000F6CF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C8BC8D1BF7052000F6CF71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +225,8 @@
 		35C8BD271BF739F600F6CF71 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = libs/libavutil.a; sourceTree = "<group>"; };
 		35C8BD281BF739F600F6CF71 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = libs/libswresample.a; sourceTree = "<group>"; };
 		35C8BD291BF739F600F6CF71 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = libs/libswscale.a; sourceTree = "<group>"; };
+		35E2636B1BF8249000E7AABA /* ButtonAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonAnimations.h; sourceTree = "<group>"; };
+		35E2636C1BF8249000E7AABA /* ButtonAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonAnimations.m; sourceTree = "<group>"; };
 		3D38A9EAEFD8E5481EAF2E4B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		50A5A8E95FC87D7D3B716918 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C7A525430D6807EC2DC664EE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -354,6 +362,23 @@
 			name = personalInfo;
 			sourceTree = "<group>";
 		};
+		35B546911BF819340047D3E4 /* btRippleButton */ = {
+			isa = PBXGroup;
+			children = (
+				35B546921BF8193D0047D3E4 /* btRippleButtton.h */,
+				35B546931BF8193D0047D3E4 /* btRippleButtton.m */,
+			);
+			name = btRippleButton;
+			sourceTree = "<group>";
+		};
+		35B546951BF8199C0047D3E4 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				35B546961BF819BD0047D3E4 /* HomeVC.swift */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
 		35C8BC7F1BF7052000F6CF71 = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +464,7 @@
 		35C8BCCB1BF7081800F6CF71 /* SwiftSources */ = {
 			isa = PBXGroup;
 			children = (
+				35B546951BF8199C0047D3E4 /* home */,
 				35B546771BF789BE0047D3E4 /* personalInfo */,
 				35C8BCE51BF7317400F6CF71 /* video */,
 				35C8BCD01BF709B500F6CF71 /* photo */,
@@ -460,6 +486,8 @@
 		35C8BCD51BF70FE000F6CF71 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				35E2636A1BF8248800E7AABA /* ButtonAnimation */,
+				35B546911BF819340047D3E4 /* btRippleButton */,
 				35B5465A1BF789100047D3E4 /* SMS_RegisterUI */,
 				35B5464D1BF789080047D3E4 /* SMS_UILib */,
 				35B5463B1BF781120047D3E4 /* SMS_SDK */,
@@ -522,6 +550,15 @@
 				35C8BCF51BF7366200F6CF71 /* KxMovieViewController.m */,
 			);
 			path = kxmovie;
+			sourceTree = "<group>";
+		};
+		35E2636A1BF8248800E7AABA /* ButtonAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				35E2636B1BF8249000E7AABA /* ButtonAnimations.h */,
+				35E2636C1BF8249000E7AABA /* ButtonAnimations.m */,
+			);
+			name = ButtonAnimation;
 			sourceTree = "<group>";
 		};
 		71AAB72249729EAC34C8508C /* Frameworks */ = {
@@ -768,6 +805,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35C8BCFA1BF7366200F6CF71 /* KxMovieViewController.m in Sources */,
+				35B546971BF819BD0047D3E4 /* HomeVC.swift in Sources */,
 				35B5466F1BF789100047D3E4 /* InvitationViewControllerEx.m in Sources */,
 				35B546591BF789080047D3E4 /* SMS_MBProgressHUD.m in Sources */,
 				35B5466E1BF789100047D3E4 /* CustomCell.m in Sources */,
@@ -787,8 +825,10 @@
 				35B546561BF789080047D3E4 /* NSDictionary-DeepMutableCopy.m in Sources */,
 				35C8BCD71BF70FFA00F6CF71 /* YoYoAPI.swift in Sources */,
 				35B5467C1BF78F0F0047D3E4 /* VerifyViewController.m in Sources */,
+				35B546941BF8193D0047D3E4 /* btRippleButtton.m in Sources */,
 				35B546721BF789100047D3E4 /* RegViewController.m in Sources */,
 				35C8BCE31BF7212E00F6CF71 /* EasyTimelineEvent.m in Sources */,
+				35E2636D1BF8249000E7AABA /* ButtonAnimations.m in Sources */,
 				35C8BCF91BF7366200F6CF71 /* KxMovieGLView.m in Sources */,
 				35C8BCE21BF7212E00F6CF71 /* EasyTimeline.m in Sources */,
 				35C8BCD31BF709D100F6CF71 /* photoCell.swift in Sources */,

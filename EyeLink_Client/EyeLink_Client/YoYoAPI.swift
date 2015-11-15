@@ -16,13 +16,11 @@ protocol APIDelegate{
     func didReceiveJsonResults(json:JSON,tag:String)
 }
 
-let httpHeaderKay:String = "access_token"
-
 class YoYoAPI: NSObject {
     
     var delegate:APIDelegate?
     
-    var httpHeader:[String:String] = ["":""]
+    var httpHeader:[String:String] = ["Connection":"close"]
     
     override init() {
         ///请求头
