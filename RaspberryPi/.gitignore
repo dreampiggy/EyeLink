@@ -1,0 +1,5 @@
+# Pyc (Python compile) file
+*.pyc
+
+# SSL Key
+lib/

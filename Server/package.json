@@ -1,0 +1,33 @@
+{
+  "name": "eyelink",
+  "version": "1.0.0",
+  "description": "An eye monitor for private family. Pi, mobile and so on",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizhuoli1126/EyeLink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizhuoli1126/EyeLink/issues"
+  },
+  "homepage": "https://github.com/lizhuoli1126/EyeLink#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "captchapng": "0.0.1",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "formidable": "^1.0.17",
+    "ip": "^1.0.2",
+    "junk": "^1.0.2",
+    "log": "^1.4.0",
+    "moment": "^2.0.0",
+    "mongoose": "^4.2.5",
+    "superagent": "^1.4.0"
+  }
+}
