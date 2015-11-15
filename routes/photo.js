@@ -64,13 +64,13 @@ router.get('/history',filter.authorize,function(req,res,next){
 });
 
 //TODO get photos from rsp pi
-router.post('/upload',filter.authorize,function(req,res,next){
+router.post('/upload',function(req,res,next){
+    var inputName = 'file';
+    var form = new formidable.IncomingForm();
+    form.uploadDir = __dirname+"/../static/upload/";
+    form.keepExtensions = true;
     form.parse(req,function(err,fields,files){
-        var fileName=files.file.name;
-        var newPath = __dirname+"/../static/upload/"+fileName;
-        var rs = fs.createReadStream(files.file.path);
-        var ws = fs.createWriteStream(newPath);
-        rs.pipe(ws);
+        var fileName=files[inputName].name;
         var rstURL=serverIP+"/image/upload/"+fileName;
         res.writeHead(200,{
             'Content-Type':'text/plain'
